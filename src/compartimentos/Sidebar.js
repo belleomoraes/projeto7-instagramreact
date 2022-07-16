@@ -12,57 +12,6 @@ export default function Sidebar(){
           </div>
           <Sugestoes />
 
-          
-
-          <div class="sugestao">
-            <div class="usuario">
-              <img src="img/chibirdart.svg" />
-              <div class="texto">
-                <div class="nome">chibirdart</div>
-                <div class="razao">Segue você</div>
-              </div>
-            </div>
-
-            <div class="seguir">Seguir</div>
-          </div>
-
-          <div class="sugestao">
-            <div class="usuario">
-              <img src="img/razoesparaacreditar.svg" />
-              <div class="texto">
-                <div class="nome">razoesparaacreditar</div>
-                <div class="razao">Novo no Instagram</div>
-              </div>
-            </div>
-
-            <div class="seguir">Seguir</div>
-          </div>
-
-          <div class="sugestao">
-            <div class="usuario">
-              <img src="img/adorable_animals.svg" />
-              <div class="texto">
-                <div class="nome">adorable_animals</div>
-                <div class="razao">Segue você</div>
-              </div>
-            </div>
-
-            <div class="seguir">Seguir</div>
-          </div>
-
-          <div class="sugestao">
-            <div class="usuario">
-              <img src="img/smallcutecats.svg" />
-              <div class="texto">
-                <div class="nome">smallcutecats</div>
-                <div class="razao">Segue você</div>
-              </div>
-            </div>
-
-            <div class="seguir">Seguir</div>
-          </div>
-        </div>
-
         <div class="links">
           Sobre • Ajuda • Imprensa • API • Carreiras • Privacidade • Termos • Localizações • Contas mais relevantes • Hashtags • Idioma
         </div>
