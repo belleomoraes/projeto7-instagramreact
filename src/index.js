@@ -12,11 +12,15 @@ function App() {
       <div class="corpo">
         <div class="esquerda">
           <BarraStories />
+          <div class="posts">
           <Posts />
+          </div>
+          
         </div>
         <Sidebar />
-        <FundoMobile />
+        
       </div>
+      <FundoMobile />
     </div>
   );
 }
