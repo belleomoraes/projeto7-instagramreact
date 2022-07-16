@@ -1,4 +1,5 @@
 
+import React from "react";
 const cadaPost = [
   {
       topoImg: "img/meowed.svg",
@@ -19,11 +20,13 @@ const cadaPost = [
 ]
 
 export default function Post() {
+  const [colorHeart, setColorHeart] = React.useState("dislike")
+  const [filledHeart, setFilledHeart] = React.useState("heart-outline")
 return cadaPost.map(post =>
     <div class="post">
   <div class="topo">
           <div class="usuario">
-            <img src={post.topoImg} />
+            <img src={post.topoImg}/>
             {post.topoName} 
           </div>
           <div class="acoes">
@@ -32,12 +35,22 @@ return cadaPost.map(post =>
         </div>
 
         <div class="conteudo">
-        <img src={post.conteudoImg} />
+        <img src={post.conteudoImg} onClick = {() => {
+            setFilledHeart("heart")
+            setColorHeart("like md hydrated")
+          }
+          }  />
       </div>
       <div class="fundo">
       <div class="acoes">
         <div>
-          <ion-icon name="heart-outline"></ion-icon>
+          <ion-icon name={filledHeart} class={colorHeart}
+          onClick = {() => {
+            setFilledHeart("heart")
+            setColorHeart("like md hydrated")
+          }
+          } 
+          ></ion-icon>
           <ion-icon name="chatbubble-outline"></ion-icon>
           <ion-icon name="paper-plane-outline"></ion-icon>
         </div>

@@ -310,6 +310,10 @@
     display: none !important;
   }
   
+  .esquerda .posts .post .acoes .like  {
+    color: rgb(187, 42, 42);
+    
+  }
   @media (max-width: 935px) {
     .sidebar {
       display: none;
