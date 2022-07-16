@@ -1,31 +1,18 @@
+import UsuarioSidebar from "./subcompartimentos/UsuarioSidebar";
+import Sugestoes from "./subcompartimentos/Sugestoes";
 export default function Sidebar(){
     return (
         <div class="sidebar">
-        <div class="usuario">
-          <img src="img/catanacomics.svg" />
-          <div class="texto">
-            <strong>catanacomics</strong>
-            Catana
-          </div>
-        </div>
+          <UsuarioSidebar/>
 
         <div class="sugestoes">
           <div class="titulo">
             Sugestões para você
             <div>Ver tudo</div>
           </div>
+          <Sugestoes />
 
-          <div class="sugestao">
-            <div class="usuario">
-              <img src="img/bad.vibes.memes.svg" />
-              <div class="texto">
-                <div class="nome">bad.vibes.memes</div>
-                <div class="razao">Segue você</div>
-              </div>
-            </div>
-
-            <div class="seguir">Seguir</div>
-          </div>
+          
 
           <div class="sugestao">
             <div class="usuario">

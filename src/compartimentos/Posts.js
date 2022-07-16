@@ -1,41 +1,16 @@
-
-
+import Topo from "./subcompartimentos/Topo";
+import Conteudo from "./subcompartimentos/Conteudo";
+import Acoes from "./subcompartimentos/Acoes";
+import Curtidas from "./subcompartimentos/Curtidas";
 export default function Posts() {
     return (
         <div class="posts">
         <div class="post">
-          <div class="topo">
-            <div class="usuario">
-              <img src="img/meowed.svg" />
-              meowed
-            </div>
-            <div class="acoes">
-              <ion-icon name="ellipsis-horizontal"></ion-icon>
-            </div>
-          </div>
-
-          <div class="conteudo">
-            <img src="img/gato-telefone.svg" />
-          </div>
-
+          <Topo />
+          <Conteudo />
           <div class="fundo">
-            <div class="acoes">
-              <div>
-                <ion-icon name="heart-outline"></ion-icon>
-                <ion-icon name="chatbubble-outline"></ion-icon>
-                <ion-icon name="paper-plane-outline"></ion-icon>
-              </div>
-              <div>
-                <ion-icon name="bookmark-outline"></ion-icon>
-              </div>
-            </div>
-
-            <div class="curtidas">
-              <img src="img/respondeai.svg" />
-              <div class="texto">
-                Curtido por <strong>respondeai</strong> e <strong>outras 101.523 pessoas</strong>
-              </div>
-            </div>
+          <Acoes/>
+          <Curtidas />
           </div>
         </div>
 
