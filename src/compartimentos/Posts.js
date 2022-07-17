@@ -22,6 +22,28 @@ const cadaPost = [
 export default function Post() {
   const [colorHeart, setColorHeart] = React.useState("dislike")
   const [filledHeart, setFilledHeart] = React.useState("heart-outline")
+  const [contador, setContador] = React.useState(0)
+
+ 
+  function curtir (){
+    console.log("1: vc vai curtir")
+    setContador(1)
+
+    if (contador === 0) {
+    console.log("2: entrou no contador 0")
+    console.log(contador)
+    setFilledHeart("heart")
+    setColorHeart("like md hydrated")
+    } else {
+    console.log("3: entrou no contador 1")
+    console.log(contador)
+    setFilledHeart("heart-outline")
+    setColorHeart("dislike md hydrated")
+    setContador(0)
+    }
+
+    
+  }
 return cadaPost.map(post =>
     <div class="post">
   <div class="topo">
@@ -35,22 +57,13 @@ return cadaPost.map(post =>
         </div>
 
         <div class="conteudo">
-        <img src={post.conteudoImg} onClick = {() => {
-            setFilledHeart("heart")
-            setColorHeart("like md hydrated")
-          }
-          }  />
+        <img src={post.conteudoImg} onClick = {curtir}/>
       </div>
       <div class="fundo">
       <div class="acoes">
         <div>
           <ion-icon name={filledHeart} class={colorHeart}
-          onClick = {() => {
-            setFilledHeart("heart")
-            setColorHeart("like md hydrated")
-          }
-          } 
-          ></ion-icon>
+          onClick = {curtir}></ion-icon>
           <ion-icon name="chatbubble-outline"></ion-icon>
           <ion-icon name="paper-plane-outline"></ion-icon>
         </div>
